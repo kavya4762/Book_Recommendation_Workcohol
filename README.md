@@ -46,10 +46,10 @@ To generate personalized messages, this app uses OpenAI GPT-3.5-turbo.
 
 📂 Project Files
 
-File Name	Description
-app.py	Main Streamlit app with book recommendation + GenAI
-Books.csv	Book metadata including title and author
-Ratings.csv	Ratings data used to filter books
-requirements.txt	Required Python dependencies
-README.md	This file
-hybrid_recommender.py	⚠️ Experimental hybrid recommender (not used in app)
+| File Name             | Description                                      |
+|-----------------------|--------------------------------------------------|
+| `app.py`              | Main app with book recommender + GenAI           |
+| `Books.csv`           | Book metadata (title + author)                  |
+| `Ratings.csv`         | Ratings used for filtering recommendations       |
+| `requirements.txt`    | Python dependencies                             |
+| `hybrid_recommender.py` | Experimental hybrid model (not used in app)    |
