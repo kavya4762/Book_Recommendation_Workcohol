@@ -64,11 +64,11 @@ To generate personalized messages, this app uses OpenAI GPT-3.5-turbo.
 
 🚀 Example
 If you type:
-| The Alchemist
+ The Alchemist
 You might see:
-| Recommended Books
-|   Brida by Paulo Coelho
-|   Siddhartha by Hermann Hesse
-|   Jonathan Livingston Seagull by Richard Bach
-| Message:
-| “If you loved The Alchemist, you're going to be inspired by these timeless gems that speak to the soul…”
+ Recommended Books
+   Brida by Paulo Coelho
+   Siddhartha by Hermann Hesse
+   Jonathan Livingston Seagull by Richard Bach
+ Message:
+ “If you loved The Alchemist, you're going to be inspired by these timeless gems that speak to the soul…”
