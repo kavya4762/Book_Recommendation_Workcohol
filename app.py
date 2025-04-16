@@ -1,3 +1,8 @@
+'''Project by Kavya G - kavya4762g@gmail.com
+and Satish - satishprakash70@gmail.com
+Title: Book Recommendation System using Gen AI
+Intern Role: AI Engineer
+College: Karunya Institute of Technology and Sciences'''
 
 import streamlit as st
 import pandas as pd
@@ -6,23 +11,20 @@ from sklearn.metrics.pairwise import cosine_similarity
 import openai
 
 # Load data
-@st.cache_data
 def load_data():
-    books = pd.read_csv("Books.csv")
-    ratings = pd.read_csv("Ratings.csv")
+    books = pd.read_csv("Books.csv", delimiter=';')
+    ratings = pd.read_csv("Ratings.csv", delimiter=';')
+
+    #books['title'] = books['title'].fillna('')
+    #books['author'] = books['author'].fillna('')
+    #books['text'] = books['title'] + " " + books['author']
     
-    # Optional: drop NA and prepare text field
-    books['title'] = books['title'].fillna('')
-    books['author'] = books['author'].fillna('')
-    books['text'] = books['title'] + " " + books['author']
-    
-    ratings = ratings[ratings['rating'] > 5]  # Filter for positive ratings
+    ratings = ratings[ratings['rating'] > 5]  
     return books, ratings
 
 books, ratings = load_data()
 
-# Compute similarity matrix
-@st.cache_resource
+# Similarity matrix
 def compute_similarity():
     tfidf = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf.fit_transform(books['text'])
@@ -50,27 +52,27 @@ def generate_summary(recommended_books):
         "write a short and friendly personalized message suggesting them to a book lover."
     )
     response = openai.ChatCompletion.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
     return response.choices[0].message.content.strip()
 
 # Streamlit UI
-st.title("📚 Book Recommender + GenAI")
+st.title("📚 Book Recommender + GenAI 📚 - Workcohol Project")
 book_input = st.text_input("Enter a book you like:")
 
-openai_api_key = st.text_input("Enter your OpenAI API key:", type="password")
+openai_api_key = st.text_input("Enter your OpenAI API key:", type="password") #we can also add thr API key within the code and implement it
 openai.api_key = openai_api_key
 
 if st.button("Recommend"):
     if book_input and openai_api_key:
         recommended = recommend_books(book_input, num=5)
         if not recommended.empty:
-            st.write("### 🔍 Recommendations:")
+            st.write("🔍 Recommendations: 🔍")
             st.table(recommended)
 
-            st.write("### 🤖 Personalized Message:")
+            st.write("🤖 Personalized Message (from us):")
             st.write(generate_summary(recommended))
         else:
             st.error("No recommendations found. Try a different book title.")
