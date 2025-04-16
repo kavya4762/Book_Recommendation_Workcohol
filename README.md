@@ -42,4 +42,4 @@ streamlit run app.py </pre>
 🔑 OpenAI API Key
 To generate personalized messages, this app uses OpenAI GPT-3.5-turbo.
 
-📌 Get your API key from OpenAI Dashboard and paste it into the app when prompted. [OpenAI API](https://platform.openai.com/account/api-keys)
+📌 Get your API key from [OpenAI API Dashboard](https://platform.openai.com/account/api-keys) and paste it into the app when prompted. 
