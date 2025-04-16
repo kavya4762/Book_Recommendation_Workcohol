@@ -29,7 +29,7 @@ This project was developed as part of our internship at Workcohol, showcasing ou
 
 <pre>
 git clone " "
-cd <repo-name> </pre>
+cd "repo-name" </pre>
 
 ### 2. Install the required libraries
 <pre>
