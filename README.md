@@ -28,8 +28,8 @@ This project was developed as part of our internship at Workcohol, showcasing ou
 ### 1. Clone the repository
 
 <pre>
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name </pre>
+git clone " "
+cd <repo-name> </pre>
 
 ### 2. Install the required libraries
 <pre>
