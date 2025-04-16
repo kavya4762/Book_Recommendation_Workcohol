@@ -27,10 +27,10 @@ This project was developed as part of our internship at Workcohol, showcasing ou
 
 ### 1. Clone the repository
 
-<pre> ```bash
+<pre>
 git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name ``` </pre>
+cd your-repo-name </pre>
 
 ### 2. Install the required libraries
 ```bash
-pip install -r requirements.txt ``` 
+pip install -r requirements.txt 
