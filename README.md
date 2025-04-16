@@ -31,6 +31,6 @@ This project was developed as part of our internship at Workcohol, showcasing ou
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name ``` </pre>
 
-<pre> ### 2. Install the required libraries
+### 2. Install the required libraries
 ```bash
 pip install -r requirements.txt ``` </pre>
