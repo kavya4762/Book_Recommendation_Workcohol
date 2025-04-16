@@ -33,4 +33,4 @@ cd your-repo-name ``` </pre>
 
 ### 2. Install the required libraries
 ```bash
-pip install -r requirements.txt ``` </pre>
+pip install -r requirements.txt ``` 
