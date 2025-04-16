@@ -32,7 +32,10 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name </pre>
 
 ### 2. Install the required libraries
-<pre> ```bash
+<pre>
 pip install -r requirements.txt </pre>
 
+### 3. Run the app
+<pre>
+streamlit run app.py </pre>
 
