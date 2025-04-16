@@ -27,8 +27,3 @@ def recommend_books(user_id, book_title):
     hybrid_recommendations = list(set(top_books) & set(top_similar_books))
 
     return hybrid_recommendations if hybrid_recommendations else list(top_books)[:5]
-
-# Example usage
-user_id = int(input("Enter user ID: "))
-book_title = input("Enter a book you like: ")
-print("Hybrid Recommendations: ", recommend_books(user_id, book_title))
