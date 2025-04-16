@@ -32,5 +32,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name </pre>
 
 ### 2. Install the required libraries
-```bash
-pip install -r requirements.txt 
+<pre> ```bash
+pip install -r requirements.txt </pre>
+
+
