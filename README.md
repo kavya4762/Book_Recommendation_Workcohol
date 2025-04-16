@@ -43,3 +43,13 @@ streamlit run app.py </pre>
 To generate personalized messages, this app uses OpenAI GPT-3.5-turbo.
 
 📌 Get your API key from [OpenAI API Dashboard](https://platform.openai.com/account/api-keys) and paste it into the app when prompted. 
+
+📂 Project Files
+
+File Name	Description
+app.py	Main Streamlit app with book recommendation + GenAI
+Books.csv	Book metadata including title and author
+Ratings.csv	Ratings data used to filter books
+requirements.txt	Required Python dependencies
+README.md	This file
+hybrid_recommender.py	⚠️ Experimental hybrid recommender (not used in app)
