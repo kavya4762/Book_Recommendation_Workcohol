@@ -1,3 +1,4 @@
+#NOT USED IN THIS APP, THIS FILE IS JUST AN EXPERIMENT TO SHOW THAT WE ARE TRYING TO EXPLORE THE HYBRID MODEL
 import numpy as np
 import pandas as pd
 import tensorflow as tf
