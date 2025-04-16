@@ -80,3 +80,8 @@ You might see:
  Message:
  
  “If you loved The Alchemist, you're going to be inspired by these timeless gems that speak to the soul…”
+
+
+ Screenshot:
+![image](https://github.com/user-attachments/assets/9466979e-a379-44ae-a164-030dfd348be2)
+
