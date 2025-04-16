@@ -53,3 +53,22 @@ To generate personalized messages, this app uses OpenAI GPT-3.5-turbo.
 | `Ratings.csv`         | Ratings used for filtering recommendations       |
 | `requirements.txt`    | Python dependencies                             |
 | `hybrid_recommender.py` | Experimental hybrid model (not used in app)    |
+
+🧪 Note: The hybrid_recommender.py script is included as a prototype experiment for a hybrid recommendation system. It is not integrated into the current Streamlit app but can be explored for future development.
+
+🧪 How It Works
+1. Enter a book title you like.
+2. The app finds similar books using TF-IDF and cosine similarity.
+3. GPT-3.5-turbo generates a short and friendly recommendation message.
+4. Everything is displayed on a clean Streamlit interface.
+
+🚀 Example
+If you type:
+| The Alchemist
+You might see:
+| Recommended Books
+|   Brida by Paulo Coelho
+|   Siddhartha by Hermann Hesse
+|   Jonathan Livingston Seagull by Richard Bach
+| Message:
+| “If you loved The Alchemist, you're going to be inspired by these timeless gems that speak to the soul…”
