@@ -16,7 +16,7 @@ This is a book recommendation app built using **Streamlit**, **scikit-learn**, a
 ## 🧑‍💻 Built By
 
 **Satish** and **Kavya G**  
-**AI Engineering Interns at Workcohol, **
+**AI Engineering Interns at Workcohol**, 
 **Karunya Institute of Technology and Sciences**
 
 This project was developed as part of our internship at Workcohol, showcasing our learning and application of a Book recommendation System suing Gen AI, also using techniques with hybrid model.
